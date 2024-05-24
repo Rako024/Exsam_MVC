@@ -1,0 +1,32 @@
+﻿@using Core.Models
+@model OurService
+<div class="container justify-content-center">
+    <form method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label asp-for="Title" class="form-label">Title</label>
+    <input asp-for="Title" class="form-control" >
+    <span asp-validation-for="Title" class="text-danger"></span>
+  </div>
+
+        <div class="mb-3">
+            <label asp-for="SubTitle" class="form-label">SubTitle</label>
+            <input asp-for="SubTitle" class="form-control">
+            <span asp-validation-for="SubTitle" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Description</label>
+            <input asp-for="Description" class="form-control">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="IconTag" class="form-label">IconTag</label>
+            <input asp-for="IconTag" class="form-control">
+            <span asp-validation-for="IconTag" class="text-danger"></span>
+        </div>
+
+        <div asp-validation-summary=All class="row text-danger"></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

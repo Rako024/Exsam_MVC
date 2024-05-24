@@ -1,0 +1,46 @@
+﻿@using Core.Models
+@{
+    int count = 1;
+}
+@model List<OurService>
+
+    <div class="container">
+        <h1>Services</h1>
+          <a asp-action="Create" class="btn btn-primary" >Create</a>
+        
+    </div>
+
+<div class="container justify-content-center">
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">SubTitle</th>
+      <th scope="col">Descrption</th>
+      <th scope="col">Icon</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach (var item in Model)
+   {
+       
+    <tr>
+      <th scope="row">@count</th>
+      <td>@item.Title</td>
+      <td>@item.SubTitle</td>
+      <td>@item.Description</td>
+      <td>
+            @Html.Raw(item.IconTag)
+      </td>
+      <td>
+          <a asp-action="Update" class="btn btn-info" asp-route-id="@item.Id">Update</a>
+          <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Delete</a>
+      </td>
+      
+    </tr>
+    
+   }
+  </tbody>
+</table>
+</div>

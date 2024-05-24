@@ -1,0 +1,307 @@
+﻿@using Core.Models
+
+@model List<OurService>
+
+    <!--HOME SECTION-->
+    <div id="home-sec">
+
+
+    <div class="container" id="home" >
+        <div class="row text-center">
+            <div class="col-md-12">
+                <span class="head-main">GET PAGE DONE</span>
+                <h2 class="head-sub-main">It take efforts</h2>
+                <h3 class="head-last">Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</h3>
+                <a href="#about-sec" class="btn btn-danger btn-lg head-btn-one">DOWNLOAD THIS THEME NOW !</a> 
+            </div>
+        </div>
+    </div>
+         </div>
+    <!--END HOME SECTION-->
+
+
+
+
+    <!--SERVICES SECTION-->    
+    <section  id="services-sec">
+        <div class="container">
+            <div class="row ">
+                <h1>OUR SERVICES :</h1>
+                 <div class="col-md-12 g-pad-bottom">
+                  <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+                 <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+                     </div>
+
+                <div class="col-md-12 text-center">
+                    <!--FrontTOBackend-->
+                    @foreach (var item in Model)
+                    {
+                    <div class="col-md-4 ">
+                        <div class="service-div">
+                            @Html.Raw(item.IconTag)
+                            <h4>@item.Title </h4>
+                            <p>
+                                @item.Description
+                            </p>
+                            <p>
+                                @item.SubTitle
+                            </p>
+                        </div>
+                    </div>
+                }
+                    
+                </div>
+                <div class="col-md-12 g-pad-bottom">
+                  <div class="col-md-12">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.   
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.   
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+
+                     </div>
+            </div>
+        </div>
+    </section>
+    <!--END SERVICES SECTION-->
+     <!--STATS SECTION-->
+    <section class="c-blue">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-9 ">
+                    <div class="stats-div">
+                        <h3>Featured In Wall Street </h3>
+                         <h4>and many other magzines..</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="stats-div">
+                        <h3>300+</h3>
+                        <h4>Reports</h4>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--END STATS SECTION-->
+     <!--PRICE SECTION-->
+    <section id="price-sec">
+        <div class="container">
+            <div class="row ">
+                <h1>OUR PLANS :</h1>
+                  <div class="col-md-12 g-pad-bottom">
+                  <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+                 <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+                     </div>
+                <div class="col-md-12 text-center ">
+                    <div class="col-md-4">
+                        <ul class="plan">
+                            <li class="plan-head">BASIC PLAN</li>
+
+                            <li><strong>12</strong> Accounts</li>
+                            <li><strong>52</strong> Emails</li>
+                            <li><strong>50 GB</strong> Space</li>
+                            <li><strong>Free</strong> Support</li>
+                             <li class="main-price">$99 only</li>
+                            <li class="bottom">
+                                <a href="#" class="btn btn-danger btn-lg btn-block">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="plan">
+                            <li class="plan-head">POPULAR PLAN</li>
+
+                            <li><strong>12</strong> Accounts</li>
+                            <li><strong>52</strong> Emails</li>
+                            <li><strong>50 GB</strong> Space</li>
+                            <li><strong>Free</strong> Support</li>
+                            <li class="main-price">$199 only</li>
+                            <li class="bottom">
+                                <a href="#" class="btn btn-primary btn-lg btn-block">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="plan">
+                            <li class="plan-head">VALUE PLAN</li>
+
+                            <li><strong>12</strong> Accounts</li>
+                            <li><strong>52</strong> Emails</li>
+                            <li><strong>50 GB</strong> Space</li>
+                            <li><strong>Free</strong> Support</li>
+                               <li class="main-price">$299 only</li>
+                            <li class="bottom">
+                                <a href="#" class="btn btn-success btn-lg btn-block">Read More</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- END PRICE SECTION-->
+    <!--STATS SECTION-->
+    <section class="c-blue">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 ">
+                    <div class="stats-div">
+                        <h3>5000+ </h3>
+                        <h4>Projects</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 ">
+                    <div class="stats-div">
+                        <h3>205+ </h3>
+                        <h4>Countries</h4>
+                    </div>
+
+                </div>
+                <div class="col-md-3 ">
+
+                    <div class="stats-div">
+                        <h3>1300+ </h3>
+                        <h4>Offices</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="stats-div">
+                        <h3>2400+ </h3>
+                        <h4>Clients</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END STATS SECTION-->
+
+    <!--CONTACT SECTION-->
+
+    <section  id="contact-sec">
+        <div class="container">
+
+            <div class="row">
+                 <h1>Contact Us :</h1>
+                  <div class="col-md-12 g-pad-bottom">
+                  <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+                 <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
+                    </p>
+                      </div>
+                     </div>
+                <div class="col-md-6">
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Email address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                   <strong>Address:</strong>  123,Your locality , Counrty Name, Pin-20100090. <br />
+                 <strong>Email:</strong>  info@yourdomain.com <br />
+                          <strong>Web:</strong>  www.yourdomain.com <br />
+                         <strong>Mobile:</strong>  +00-909-808-707-00<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END CONTACT SECTION-->
+
+    <!-- SOCIAL STATS SECTION-->
+    <section>
+        <div class="container">
+
+        </div>
+    </section>
+    <!-- END SOCIAL STATS SECTION-->
+

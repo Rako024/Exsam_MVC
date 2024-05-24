@@ -1,0 +1,40 @@
+﻿@using Core.Models
+@{
+    int count = 1;
+}
+@model List<Setting>
+
+<div class="container">
+    <h1>Services</h1>
+    
+
+</div>
+
+<div class="container justify-content-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Key</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <th scope="row">@count</th>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                    
+                    <td>
+                        <a asp-action="Update" class="btn btn-info" asp-route-key="@item.Key">Update</a>
+                    </td>
+
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>

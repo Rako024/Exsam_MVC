@@ -1,0 +1,19 @@
+﻿@using Core.Models
+@model Setting
+<div class="container justify-content-center">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Key" class="form-label">Title</label>
+            <input asp-for="Key" class="form-control" disabled>
+            <span asp-validation-for="Key" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Value" class="form-label">SubTitle</label>
+            <input asp-for="Value" class="form-control">
+            <span asp-validation-for="Value" class="text-danger"></span>
+        </div>
+        <div asp-validation-summary=All class="row text-danger"></div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
